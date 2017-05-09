@@ -14,3 +14,13 @@ The difference between Haskell’s if statement and if statements in imperative 
 We usually use ’ to either denote a strict version of a function (one that isn’t lazy) or a slightly modified version of a function or a variable.
 
 functions can’t begin with uppercase letters.When a function doesn’t take any parameters, we usually say it’s a definition (or a name). Because we can’t change what names (and functions) mean once we’ve defined them.
+
+In Haskell, lists are a homogenous data structure. It stores several elements of the same type.
+
+Speaking of characters, strings are just lists of characters. "hello" is just syntactic sugar for [’h’,’e’,’l’,’l’,’o’]. Because strings are lists, we can use list functions on them, which is really handy.
+
+Haskell has to walk through the whole list on the left side of ++.
+
+However, putting something at the beginning of a list using the : operator (also called the cons operator) is instantaneous.
+
+Notice how : takes a number and a list of numbers or a character and a list of characters, whereas ++ takes two lists. Even if you’re adding an element to the end of a list with ++, you have to surround it with square brackets so it becomes a list.
