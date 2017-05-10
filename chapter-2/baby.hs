@@ -31,3 +31,15 @@ getMaxEleInList list = maximum list
 getMinEleInList list = minimum list
 
 checkListEle list ele = ele `elem` list
+
+test1 = [1..20]
+
+test2 = [2,4..20]
+
+test3 = take 5 [0,10..]
+
+test4 = take 6 (cycle [4,5,6])
+
+test5 = take 7 (repeat 7)
+
+test6 = replicate 3 10
