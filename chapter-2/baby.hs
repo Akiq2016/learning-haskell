@@ -59,3 +59,12 @@ test9 = [
         ]
 
 getEvenEle nestedArr = [[ele | ele<-arr, even ele]| arr<-nestedArr]
+
+test10 = fst (8, 10)
+
+test11 = snd ("dfg", "rety")
+
+test12 = zip [1,2,3,4,45] ["a", "b", "c", "d"]
+
+-- get a right triangle with its side equal to or smaller than 10 and the perimeter is 24
+test13 = [(a, b, c) | a<-[1..10], b<-[1..10], c<-[1..10], a^2+b^2 == c^2, a+b+c==24]
